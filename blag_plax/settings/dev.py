@@ -125,7 +125,7 @@ STATICFILES_FINDERS = (
 )
 
 # PIPELINE_JS_COMPRESSOR = 'pipeline.compressors.uglifyjs.UglifyJSCompressor'
-# PIPELINE_UGLIFYJS_BINARY = '/usr/bin/uglifyjs'
+PIPELINE_UGLIFYJS_BINARY = '/usr/bin/uglifyjs'
 
 # CSS Files.
 PIPELINE_CSS = {
