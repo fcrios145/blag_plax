@@ -1,0 +1,15 @@
+{
+  "name": "blag_plax",
+  "version": "0.0.1",
+  "homepage": "https://github.com/fcrios145/template",
+  "description": "plantilla de proyecto",
+  "authors": [
+    "Francisco Rios"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "underscore": "~1.8.3",
+    "bootstrap": "~3.3.4",
+    "jquery": "~2.1.1"
+  }
+}
