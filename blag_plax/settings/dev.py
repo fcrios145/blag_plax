@@ -40,7 +40,7 @@ INSTALLED_APPS = (
 
     # aplicaciones que creamos nosotros, las tenemos que agregar en esta parte
     'blog',
-    # 'pipeline',
+    'pipeline',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -116,45 +116,44 @@ STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
 
-# STATICFILES_STORAGE = 'pipeline.storage.PipelineCachedStorage'
+STATICFILES_STORAGE = 'pipeline.storage.PipelineCachedStorage'
 
 STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.FileSystemFinder',
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
-    # 'pipeline.finders.PipelineFinder',
+    'pipeline.finders.PipelineFinder',
 )
 
 # PIPELINE_JS_COMPRESSOR = 'pipeline.compressors.uglifyjs.UglifyJSCompressor'
 # PIPELINE_UGLIFYJS_BINARY = '/usr/bin/uglifyjs'
 
-# # CSS Files.
-# PIPELINE_CSS = {
-    # # Project libraries.
-    # 'libraries': {
-        # 'source_filenames': (
-            # 'bower_components/bootstrap/dist/css/bootstrap.css',
-            # 'test.sass',
-        # ),
-        # # Compress passed libraries and have
-        # # the output in`css/libs.min.css`.
-        # 'output_filename': 'css/libs.min.css',
-    # }
-    # # ...
-# }
+# CSS Files.
+PIPELINE_CSS = {
+    # Project libraries.
+    'libraries': {
+        'source_filenames': (
+            'bower_components/bootstrap/dist/css/bootstrap.css',
+        ),
+        # Compress passed libraries and have
+        # the output in`css/libs.min.css`.
+        'output_filename': 'css/libs.min.css',
+    }
+    # ...
+}
 
-# # JavaScript files.
-# PIPELINE_JS = {
-    # # Project JavaScript libraries.
-    # 'libraries': {
-        # 'source_filenames': (
-            # 'bower_components/jquery/dist/jquery.js',
-            # 'bower_components/underscore/underscore.js',
-        # ),
-        # # Compress all passed files into `js/libs.min.js`.
-        # 'output_filename': 'js/libs.min.js',
-    # }
-    # # ...
-# }
+# JavaScript files.
+PIPELINE_JS = {
+    # Project JavaScript libraries.
+    'libraries': {
+        'source_filenames': (
+            'bower_components/jquery/dist/jquery.js',
+            'bower_components/underscore/underscore.js',
+        ),
+        # Compress all passed files into `js/libs.min.js`.
+        'output_filename': 'js/libs.min.js',
+    }
+    # ...
+}
 
 # PIPELINE_COMPILERS = (
     # 'pipeline.compilers.coffee.CoffeeScriptCompiler',
