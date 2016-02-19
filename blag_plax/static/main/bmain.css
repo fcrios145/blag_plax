@@ -1,0 +1,16 @@
+.top-bar {
+	height: 7rem;
+	background-color: #2c2b2b;
+}
+.top-bar .name {
+	height: 5.4rem;
+	margin: .833rem 0rem .833rem 0rem;
+}
+
+.top-bar.expanded {
+	background: none repeat scroll 0% 0% #333;
+}
+
+.top-bar .toggle-topbar.menu-icon {
+	top: 38%
+}
