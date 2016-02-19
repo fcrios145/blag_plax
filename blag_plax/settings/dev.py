@@ -132,13 +132,26 @@ PIPELINE_CSS = {
     # Project libraries.
     'libraries': {
         'source_filenames': (
-            'bower_components/bootstrap/dist/css/bootstrap.css',
+            'main/reset.css',
+            'main/main.css',
         ),
-        # Compress passed libraries and have
-        # the output in`css/libs.min.css`.
         'output_filename': 'css/libs.min.css',
+    },
+    'bootstrap': {
+        'source_filenames': (
+            'bower_components/normalize-css/normalize.css',
+            'bower_components/bootstrap/dist/css/bootstrap.css',
+            'main/bmain.css',
+        ),
+        'output_filename': 'css/bootstrap.min.css',
+    },
+    'foundation': {
+        'source_filenames': (
+            'bower_components/normalize-css/normalize.css',
+            'main/app.sass',
+        ),
+        'output_filename': 'css/foundation.min.css',
     }
-    # ...
 }
 
 # JavaScript files.
@@ -148,6 +161,8 @@ PIPELINE_JS = {
         'source_filenames': (
             'bower_components/jquery/dist/jquery.js',
             'bower_components/underscore/underscore.js',
+            'bower_components/modernizr/modernizr.js',
+            'bower_components/bootstrap/dist/js/bootstrap.js',
         ),
         # Compress all passed files into `js/libs.min.js`.
         'output_filename': 'js/libs.min.js',
@@ -155,11 +170,11 @@ PIPELINE_JS = {
     # ...
 }
 
-# PIPELINE_COMPILERS = (
+PIPELINE_COMPILERS = (
     # 'pipeline.compilers.coffee.CoffeeScriptCompiler',
-    # 'pipeline.compilers.sass.SASSCompiler',
+    'pipeline.compilers.sass.SASSCompiler',
     # 'pipeline.compilers.stylus.StylusCompiler',
-# )
+)
 # PIPELINE_COFFEE_SCRIPT_BINARY = '/usr/bin/coffee'
-# PIPELINE_SASS_BINARY = '/opt/vagrant_ruby/bin/sass'
+PIPELINE_SASS_BINARY = '/usr/local/rvm/gems/ruby-2.2.1/bin/sass'
 # PIPELINE_STYLUS_BINARY = '/usr/bin/stylus'
