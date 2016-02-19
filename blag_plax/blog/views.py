@@ -1,5 +1,6 @@
 from django.http import HttpResponse
 from django.shortcuts import render_to_response
+from django.views.generic import TemplateView
 import datetime
 
 def hola(request):
@@ -8,4 +9,13 @@ def hola(request):
     return HttpResponse(html)
 
 def adios(request):
-    return render_to_response('hola_mundo.html', {'test': 'cualquier cosa'})
+    return render_to_response('hola_mundo.html', {'test': 'kjsdsjksdjfkcualquier cosa'})
+
+class Index(TemplateView):
+    template_name = 'index.html'
+
+class Prueba(TemplateView):
+    template_name = 'prueba.html'
+
+class Resume(TemplateView):
+    template_name = 'resume.html'
