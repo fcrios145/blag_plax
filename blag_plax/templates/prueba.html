@@ -1,0 +1,60 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        {% load pipeline %}
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Francisco Rios</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+        <!--<link rel="apple-touch-icon" href="apple-touch-icon.png">-->
+        <!-- Place favicon.ico in the root directory -->
+
+        {% stylesheet 'foundation' %}
+        {% load staticfiles %}
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <header>
+            <h1 >Francisco Rios</h1>
+            <p>Fundador de ninguna startup, solo soy un simple desarrollador.
+            </p>
+        </header>
+        <nav class="navbar navbar-inverse container">
+            <div>
+                <div class="navbar-header container">
+                    <ul class="nav navbar-nav pull-right">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Link4</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container contenido-blog">
+            <section class="post">
+                <div class="single-post">
+                    <h1 class="alpha-titulo">lorem ipsum dolor</h1>
+                    <span class="alpha-meta">Posted on Feb 11 2016 by <a href="#">Francisco</a></span>
+                    <p class="alpha-contenido">Elit ipsam fuga deserunt consequatur maiores. Exercitationem reiciendis officia quia asperiores aliquam. Voluptate id quidem quidem aliquam nesciunt inventore rerum? Ad laudantium deleniti iusto repellat fugiat illum accusamus? Blanditiis repudiandae.</p>
+                </div>
+            </section>
+            <section class="post">
+                <div class="single-post">
+                    <h1 class="alpha-titulo">lorem ipsum dolor</h1>
+                    <span class="alpha-meta">Posted on Feb 11 2016 by <a href="#">Francisco</a></span>
+                    <p class="alpha-contenido">Elit ipsam fuga deserunt consequatur maiores. Exercitationem reiciendis officia quia asperiores aliquam. Voluptate id quidem quidem aliquam nesciunt inventore rerum? Ad laudantium deleniti iusto repellat fugiat illum accusamus? Blanditiis repudiandae.</p>
+                </div>
+            </section>
+        </div>
+
+    {% javascript 'libraries' %}
+    </body>
+</html>
