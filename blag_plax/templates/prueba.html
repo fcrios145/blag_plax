@@ -1,66 +1,126 @@
-<!doctype html>
-<html class="no-js" lang="">
-    <head>
-        {% load pipeline %}
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Francisco Rios</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-        <!--<link rel="apple-touch-icon" href="apple-touch-icon.png">-->
-        <!-- Place favicon.ico in the root directory -->
-
-        {% stylesheet 'foundation' %}
-        {% load staticfiles %}
-    </head>
-    <body>
-        <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-
-        <!-- Add your site or application content here -->
-        <header>
-            <h1 >Francisco Rios</h1>
-            <p>Fundador de ninguna startup, solo soy un simple desarrollador.
-            </p>
-        </header>
-        <nav class="navbar navbar-inverse container">
-            <div>
-                <div class="navbar-header container">
-                    <ul class="nav navbar-nav pull-right">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">Link4</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-
-        <div class="container contenido-blog">
-            <section class="post">
-                <div class="single-post">
-                    <h1 class="alpha-titulo">lorem ipsum dolor</h1>
-                    <span class="alpha-meta">Posted on Feb 11 2016 by <a href="#">Francisco</a></span>
-                    <p class="alpha-contenido">Elit ipsam fuga deserunt consequatur maiores. Exercitationem reiciendis officia quia asperiores aliquam. Voluptate id quidem quidem aliquam nesciunt inventore rerum? Ad laudantium deleniti iusto repellat fugiat illum accusamus? Blanditiis repudiandae.</p>
-                </div>
-            </section>
-            <section class="post">
-                <div class="single-post">
-                    <h1 class="alpha-titulo">lorem ipsum dolor</h1>
-                    <span class="alpha-meta">Posted on Feb 11 2016 by <a href="#">Francisco</a></span>
-                    <p class="alpha-contenido">Elit ipsam fuga deserunt consequatur maiores. Exercitationem reiciendis officia quia asperiores aliquam. Voluptate id quidem quidem aliquam nesciunt inventore rerum? Ad laudantium deleniti iusto repellat fugiat illum accusamus? Blanditiis repudiandae.</p>
-                </div>
-            </section>
+<!DOCTYPE html>
+<html lang="es">
+    {% load pipeline %}
+    <link href='http://fonts.googleapis.com/css?family=Crete+Round' rel='stylesheet' type='text/css'>
+    {% stylesheet 'main' %}
+    {% stylesheet 'libraries' %}
+    {% load staticfiles %}
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+    <title>Francisco Rios</title>
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <h1>Francisco <span class="color">Rios</span></h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Portafolio</a></li>
+                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </nav>
         </div>
-        <footer class="footer">
-            <div class="container">
-                <div class="footer-copy-right">
-                    © 2016 - Francisco Rios
+    </header>
+
+    <div id="hero-image">
+        <div class="wrapper">
+            <h2><strong>A minimal, clean</strong><br>
+            layour for web design.</h2>
+            <a class="button-1" href="#">Get started</a>
+        </div>
+    </div>
+
+    <div id="features">
+        <div class="wrapper">
+            <ul>
+                <li class="feature-1">
+                    <h4>Easy to edit</h4>
+                    <p>Consectetur quibusdam amet voluptatibus dolor dignissimos. Earum cum suscipit placeat odit quibusdam laboriosam. Dolores omnis consequuntur molestiae aspernatur aspernatur veniam blanditiis enim molestias eos iste quo assumenda! Quis doloremque doloremque!</p>
+                </li>
+                <li class="feature-2">
+                    <h4>Layered PSD</h4>
+                    <p>Sit nobis ea commodi praesentium consequatur est sunt tempora. Quis doloremque dicta quibusdam cumque veritatis, excepturi ea provident. Voluptatem at deserunt totam minus perferendis. Cumque necessitatibus id perferendis officia facere</p>
+                </li>
+                <li class="feature-3">
+                      <h4>Ready to go</h4>
+                      <p>Elit non possimus minima commodi nulla. Quasi vitae officiis debitis delectus eveniet magnam non. Impedit culpa dolores atque ullam odit laborum eligendi repudiandae recusandae minus quibusdam doloribus odio eligendi aliquam!</p>
+                </li>
+                <div class="clear"></div>
+            </ul>
+        </div>
+    </div>
+
+    <div id="primary-content">
+        <div class="wrapper">
+            <article>
+                <h3>Feature content</h3>
+                <p>Amet magni ipsam natus cupiditate ex! Enim dolorem est quae adipisci earum porro rem numquam? Impedit sit earum distinctio molestias quis hic atque debitis. Soluta incidunt modi eius totam vel.</p>
+                <a href="#"><img src="{% static "images/video-placeholder.jpg" %}" alt="video"></a>
+            </article>
+        </div>
+    </div>
+
+    <div id="secondary-content">
+        <div class="wrapper">
+            <article style="background-image: url({% static "images/article-image-1.jpg"  %});">
+                <div class="overlay">
+                    <h4>Secondary content</h4>
+                    <p>Dolor facilis aliquam excepturi sequi eos, adipisci id! Sed facere unde exercitationem deserunt et. Aut voluptatibus velit atque officia doloribus</p>
+                    <a class="more-link" href="#">View more</a>
                 </div>
+            </article>
+
+            <article style="background-image: url({% static "images/article-image-2.jpg"  %});">
+                <div class="overlay">
+                    <h4>Secondary content</h4>
+                    <p>Dolor facilis aliquam excepturi sequi eos, adipisci id! Sed facere unde exercitationem deserunt et. Aut voluptatibus velit atque officia doloribus</p>
+                    <a class="more-link" href="#">View more</a>
+                </div>
+            </article><div class="clear"></div>
+        </div>
+    </div>
+
+    <div id="cta">
+        <div class="wrapper">
+            <h3>Heard Enough?</h3>
+            <p>Sit et vero aperiam deleniti iusto ratione, quo, veritatis vel cupiditate possimus blanditiis, sequi eligendi. Qui nihil est quam quaerat quos nulla? Quos cum ipsum earum natus necessitatibus, sint sunt?</p>
+            <a class="button-2" href="#">Get started</a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="wrapper">
+            <div id="footer-info">
+                <p>Copyright 2016 FranciscoRios. All right reserved.</p>
+                <p><a href="#">Terms of Service</a> I <a href="#">Privacy</a></p>
             </div>
-        </footer>
-    {% javascript 'libraries' %}
-    </body>
+            <div id="footer-links">
+                <ul>
+                    <li><h5>Company</h5></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Meet the team</a></li>
+                    <li><a href="#">What we do</a></li>
+                    <li><a href="#">Carrers</a></li>
+                </ul>
+                <ul>
+                    <li><h5>Company</h5></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Meet the team</a></li>
+                    <li><a href="#">What we do</a></li>
+                    <li><a href="#">Carrers</a></li>
+                </ul>
+                <ul>
+                    <li><h5>Company</h5></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Meet the team</a></li>
+                    <li><a href="#">What we do</a></li>
+                    <li><a href="#">Carrers</a></li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </footer>
+</body>
 </html>

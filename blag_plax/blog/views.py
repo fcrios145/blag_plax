@@ -19,3 +19,6 @@ class Prueba(TemplateView):
 
 class Resume(TemplateView):
     template_name = 'resume.html'
+
+class Login(TemplateView):
+    template_name = 'login.html'
