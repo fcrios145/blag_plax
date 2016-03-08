@@ -4,21 +4,6 @@ $color-extra-header: #AAAAAA
 $color-fondo: #FFF
 
 
-// Small screen / tablet
-$container-tablet-login:             (150px + $grid-gutter-width) !default
-//** For `$screen-sm-min` and up.
-$container-sm-login:                 $container-tablet-login !default
-
-// Medium screen / desktop
-$container-desktop-login:            (200px + $grid-gutter-width) !default
-//** For `$screen-md-min` and up.
-$container-md-login:                 $container-desktop-login !default
-
-// Large screen / wide desktop
-$container-large-desktop-login:      (400px + $grid-gutter-width) !default
-//** For `$screen-lg-min` and up.
-$container-lg-login:                 $container-large-desktop-login !default
-
 body
     font-family: Open Sans
 
@@ -72,17 +57,4 @@ header
     color: #aaa
     text-align: center
     margin: 50px 0
-
-.contenido-login
-    @include container-fixed
-    @media (min-width: $screen-sm-min)
-        width: $container-sm-login
-    @media (min-width: $screen-md-min)
-        width: $container-md-login
-    @media (min-width: $screen-lg-min)
-        width: $container-lg-login
-    background-color: $body-bg
-    padding: 0px 50px 90px 50px
-    margin: auto
-
 

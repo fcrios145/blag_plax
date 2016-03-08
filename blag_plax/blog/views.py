@@ -22,3 +22,5 @@ class Resume(TemplateView):
 
 class Login(TemplateView):
     template_name = 'login.html'
+    def post(self, request):
+        print request.POST.get('username')
