@@ -40,7 +40,7 @@ INSTALLED_APPS = (
 
     # aplicaciones que creamos nosotros, las tenemos que agregar en esta parte
     'blog',
-    'pipeline',
+    # 'pipeline',
 )
 
 MIDDLEWARE_CLASSES = (
